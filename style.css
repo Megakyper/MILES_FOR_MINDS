@@ -10,7 +10,7 @@ body {
   background-color: black;
   overflow-x: hidden;
   background: url('./images/rm222batch5-kul-06.jpg');
-  background-size: 100vh cover ;
+  background-size: max(cover,100vw) max(cover,100vh);
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
