@@ -1,129 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="icon" href="./wiss_logo_square.png" />
-    <link rel="stylesheet" href="form.css">
-</head>
+    <link rel="stylesheet" href="form.css" />
+  </head>
 
-<body>
+  <body>
     <div id="bg" style="overflow: hidden">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
     </div>
-    <fieldset id="myForm">
-        <section style="display: flex; justify-content: space-between; margin-bottom: 2vh">
-            <img src="./wiss_logo_square.png" alt="W" style="
+    <form class="fieldset" id="myForm">
+      <section
+        style="
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 2vh;
+        "
+      >
+        <img
+          src="./wiss_logo_square.png"
+          alt="W"
+          style="
             width: 80px;
             max-width: 90%;
             margin: 0;
             padding: 0;
             margin-bottom: 2vh;
-          " />
-            <img src="./images/FINAL DONE LOGO (1) (1) (1).png" alt="" style="
+          "
+        />
+        <img
+          src="./images/FINAL DONE LOGO (1) (1) (1).png"
+          alt=""
+          style="
             width: 120px;
             max-width: 90%;
             margin: 0;
             padding: 0;
-            margin-bottom: 2vh;"/>
-        </section>
-        <h2 style="
+            margin-bottom: 2vh;
+          "
+        />
+      </section>
+      <h2
+        style="
           font-size: large;
           color: #295939;
           margin-top: 2.5px;
           margin-bottom: 2.5vh;
-        ">
-            MILES FOR MINDS
-        </h2>
-        <div class="inputBox">
-            <input name="Cname" type="text" required />
-            <span>Name</span>
-        </div>
-        <div class="inputBox">
-            <input name="Cinst" type="text" required />
-            <span>Address</span>
-        </div>
-        <div class="inputBox">
-            <input name="Ccity" type="text" required />
-            <span>City</span>
-        </div>
-        <div class="inputBox">
-            <input name="Ccity" type="text" required />
-            <span>State</span>
-        </div>
-        <div class="inputBox">
-            <input name="Ccity" type="number" required />
-            <span>Zip</span>
-        </div>
-        <div class="inputBox">
-            <!--             <input name="Cnum" type="tel" required="required" pattern="[0-9]{10}"> -->
-            <input name="Cnum" type="number" id="phone" oninput="limitPhoneNumber(this)" maxlength="10" required />
-            <span>Phone Number</span>
-        </div>
-        <div class="inputBox">
-            <input name="Cemail" type="email" required id="emailInput" />
-            <span>Email</span>
-        </div>
-        <div class="inputBox">
-            <span>Gender</span>
-            <select name="gender" id="gender">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="trans">Trans</option>
-            </select>
-        </div>
-        <div class="inputBox">
-            <input type="date" required />
-            <span>Age</span>
-        </div>
-        <div class="inputBox">
-            <input name="age" type="number" required />
-            <span>Age on race day</span>
-        </div>
-        <div class="inputBox">
-            <!--             <input name="Cnum" type="tel" required="required" pattern="[0-9]{10}"> -->
-            <input name="Cnum" type="number" id="phone" oninput="limitPhoneNumber(this)" maxlength="10" required />
-            <span>Emergency contact Number</span>
-        </div>
-        <!-- <div class="inputBox">
-            <span>Shirt size</span>
-            <select name="size" id="size">
-                <option value="s">S</option>
-                <option value="m">M</option>
-                <option value="l">L</option>
-                <option value="xl">XL</option>
-                <option value="xl">XXL</option>
-            </select>
-        </div> -->
-        <div class="inputBox">
-            <input type="text" required />
-            <span>Group affiliation</span>
-        </div>
-        <div class="inputBox">
-            <input type="text" required />
-            <span>Marathons completed (if any)</span>
-        </div>
-        <div class="inputBox">
-            <input name="time" type="number" required />
-            <span>Estimated finish time (in min)</span>
-        </div>
-        <div class="inputBox">
-            <a href="#">
-                <button>Make Payment 
-                    <img src="lock.png" width="15px" height="15px">
-                </button>
-            </a>
-        </div>
-        
-        <div class="inputBox">
-            <button onclick="SubForm()">Submit</button>
-        </div>
-    </fieldset>
-    <script src="sandbox.js"></script>
-</body>
+        "
+      >
+        MILES FOR MINDS
+      </h2>
+      <div class="inputBox">
+        <input name="name" type="text" required id="nameInput" />
+        <span>Name</span>
+      </div>
+      <div class="inputBox">
+        <input name="institute" type="text" required id="collegeInput" />
+        <span>Address</span>
+      </div>
+      <div class="inputBox">
+        <input name="city" type="text" required id="cityInput" />
+        <span>City</span>
+      </div>
+      <div class="inputBox">
+        <input name="state" type="text" required id="stateInput" />
+        <span>State</span>
+      </div>
+      <div class="inputBox">
+        <input name="zip" type="number" required id="zipInput" />
+        <span>Zip</span>
+      </div>
+      <div class="inputBox">
+        <!--             <input name="Cnum" type="tel" required="required" pattern="[0-9]{10}"> -->
+        <input
+          name="number"
+          type="number"
+          id="phoneInput"
+          maxlength="10"
+          required
+        />
+        <!-- oninput="limitPhoneNumber(this)" -->
+        <span>Phone Number</span>
+      </div>
+      <div class="inputBox">
+        <input name="email" type="email" required id="emailInput" />
+        <span>Email</span>
+      </div>
+      <div class="inputBox">
+        <span>Gender</span>
+        <select
+          name="gender"
+          id="genderInput"
+          style="
+            background: transparent;
+            font-family: Roboto;
+            padding: 5px;
+            border-radius: 15px;
+            font-size: 17px;
+            border: 2px solid black;
+          "
+        >
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="trans">Trans</option>
+        </select>
+      </div>
+      <div class="inputBox">
+        <input type="date" required name="age" />
+        <span>Date Of Birth</span>
+      </div>
+      <div class="inputBox">
+        <input name="ageOnRaceDay" type="number" required />
+        <span>Age on race day</span>
+      </div>
+      <div class="inputBox">
+        <!--             <input name="Cnum" type="tel" required="required" pattern="[0-9]{10}"> -->
+        <input
+          name="emergencyNumber"
+          type="number"
+          id="emergencyPhoneInput"
+          maxlength="10"
+          required
+        />
+        <!-- oninput="limitPhoneNumber(this)" -->
+        <span>Emergency contact Number</span>
+      </div>
+      <div class="inputBox">
+        <input
+          type="text"
+          required
+          id="groupAffiliationInput"
+          name="groupAffiliation"
+        />
+        <span>Group affiliation</span>
+      </div>
+      <div class="inputBox">
+        <input
+          type="text"
+          required
+          id="marathonInput"
+          name="marathonsCompleted"
+        />
+        <span>Marathons completed (if any)</span>
+      </div>
+      <div class="inputBox">
+        <input name="time" type="number" id="timeInput" />
+        <span>Estimated finish time (in min)</span>
+      </div>
+      <div class="inputBox">
+        <a href="#">
+          <button>
+            Make Payment
+            <img src="lock.png" width="15px" height="15px" />
+          </button>
+        </a>
+      </div>
 
+      <div class="inputBox">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <script src="./bundle.js"></script>
+  </body>
 </html>
