@@ -73,11 +73,12 @@
             <select name="gender" id="gender">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
+                <option value="trans">Trans</option>
             </select>
         </div>
         <div class="inputBox">
             <input type="date" required />
-            <span style="font-size: 18px;margin-top: 1vh;">Date Of Birth</span>
+            <span>Age</span>
         </div>
         <div class="inputBox">
             <input name="age" type="number" required />
@@ -110,6 +111,14 @@
             <input name="time" type="number" required />
             <span>Estimated finish time (in min)</span>
         </div>
+        <div class="inputBox">
+            <a href="#">
+                <button>Make Payment 
+                    <img src="lock.png" width="15px" height="15px">
+                </button>
+            </a>
+        </div>
+        
         <div class="inputBox">
             <button onclick="SubForm()">Submit</button>
         </div>
