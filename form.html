@@ -88,7 +88,17 @@
       </div>
       <div class="inputBox">
         <span>Gender</span>
-        <select name="gender" id="genderInput">
+        <select
+          name="gender"
+          id="genderInput"
+          style="
+            background: transparent;
+            font-family: Roboto;
+            padding: 5px;
+            border-radius: 15px;
+            font-size: 17px;
+            border: 2px solid black;
+          ">
           <option value="male">Male</option>
           <option value="female">Female</option>
           <option value="trans">Trans</option>
@@ -96,7 +106,7 @@
       </div>
       <div class="inputBox">
         <input type="date" required name="age" />
-        <span>Age</span>
+        <span>Date Of Birth</span>
       </div>
       <div class="inputBox">
         <input name="ageOnRaceDay" type="number" required />
@@ -113,16 +123,6 @@
         <!-- oninput="limitPhoneNumber(this)" -->
         <span>Emergency contact Number</span>
       </div>
-      <!-- <div class="inputBox">
-            <span>Shirt size</span>
-            <select name="size" id="size">
-                <option value="s">S</option>
-                <option value="m">M</option>
-                <option value="l">L</option>
-                <option value="xl">XL</option>
-                <option value="xl">XXL</option>
-            </select>
-        </div> -->
       <div class="inputBox">
         <input
           type="text"
@@ -140,7 +140,7 @@
         <span>Marathons completed (if any)</span>
       </div>
       <div class="inputBox">
-        <input name="time" type="number" required id="timeInput" />
+        <input name="time" type="number" id="timeInput" />
         <span>Estimated finish time (in min)</span>
       </div>
       <div class="inputBox">
