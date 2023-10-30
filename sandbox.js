@@ -21,9 +21,10 @@ function is10DigitNumber(str) {
   return /^\d{10}$/.test(str);
 }
 
-form.addEventListener("submit", function () {
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
   const phoneNumber = phoneInput.value;
-  let k = 0;
   const isValid = is10DigitNumber(phoneNumber);
 
   if (isValid) {
